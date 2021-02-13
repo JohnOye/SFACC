@@ -1,0 +1,143 @@
+.un {
+	position: absolute;
+	top: 320px;
+	left: 75px;
+}
+body {
+	background-image: url('SF.png');
+	background-size: cover;
+	animation-name: anim;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes anim {
+	10% {background-image: url('SF.png');}
+    40% {background-image: url('download2.jpg');}
+	70% {background-image: url('Graphic1.jpg');}
+	
+}
+h1 {
+	color: black;
+	text-shadow: 3px 3px 1px grey;
+	font-family: Arial Rounded MT Bold, Arial, sans-serif;
+}
+.sign {
+	top: 1px;
+	width: 100px;
+	height: 30px;
+	font-size: 15px;
+	border: 2px solid green;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	right: 10%;
+	float: right;
+	margin-top: 13px;
+	margin-left: 2px;
+}
+.log {
+	float: right;
+	top: 1px;
+	width: 100px;
+	height: 30px;
+	color: white;
+	font-size: 15px;
+	border: 2px solid blue;
+	cursor: pointer;
+	right: 75px;
+	background-color: blue;
+	margin-top: 13px;
+	margin-left: 3px;
+}
+
+a {
+	text-decoration: none;
+	color: #f95dd587;
+}
+a:visited {
+	color: red;
+}
+
+#tst {
+	color: black;
+background-color: transparent;
+animation-name: me;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+}
+@keyframes me {
+0% {border-color: cyan;}
+20% {border-color: brown;}
+30% {border-color: pink;}
+40% {border-color: white;}
+}
+.na {
+	background-color: #9EE57D;
+	list-style-type: none;
+	padding: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: scroll;
+	display: block;
+	margin: 0;
+	left: 0;
+	top: 0;
+	float: left;
+}
+.na #ttl {
+  background-color: green;
+  color: white;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  top: 1px;
+}
+.na #fn {
+	margin: 0;
+}
+.na h1 {
+	margin: 0;
+	color: white;
+}
+
+.na li {
+	float: left;
+	
+}
+.na li a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	width: 100vw;
+	display: block;
+	border-bottom: 0px solid #555;
+	
+	font-size: 15px;
+	height: 42px;
+	float: left;
+}
+.na li a:visited {
+	color: black;
+}
+.na li a:hover {
+	background-color: green;
+	color: white;
+	border-bottom: 5px solid #000;
+}
+
+#rb {
+	border: 1px solid green;
+	background-color: green;
+	border-radius: 100%;
+	float: right;
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	margin-bottom: 2px;
+}
+
+
