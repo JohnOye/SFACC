@@ -19,6 +19,9 @@ h1 {
 	text-shadow: 3px 3px 1px grey;
 	font-family: Arial Rounded MT Bold, Arial, sans-serif;
 }
+#sign {
+	display: block;
+}
 .sign {
 	top: 1px;
 	width: 100px;
@@ -33,7 +36,7 @@ h1 {
 	right: 1%;
 	float: right;
 	margin-top: 13px;
-	
+	display: none;
 }
 .log {
 	float: right;
@@ -49,7 +52,7 @@ h1 {
 	background-color: blue;
 	margin-top: 13px;
 	position: relative;
-	
+	display: none;
 }
 
 a {
@@ -86,20 +89,20 @@ animation-name: me;
 	display: block;
 	margin: 0;
 	right: 0;
-	top: 10%;
+	top: 10;
 	float: right;
 	transition: width 0.3s;
 	z-index: 1;
     
 }
-.nav #ttl {
+.na #ttl {
   background-color: green;
   color: white;
   height: 10%;
-  width: 10%;
- 
+  width: 100%;
+ position: fixed;
   margin: 0;
-  top: 1px;
+  top: 1;
 }
 
 .na #fn {
@@ -117,7 +120,7 @@ animation-name: me;
 .na li a {
 	text-decoration: none;
 	color: white;
-	padding: 10px;
+	padding: 15px;
 	width: 100vw;
 	display: block;
 	border-left: 0px solid #555;
@@ -162,24 +165,32 @@ animation-name: me;
 	
 	color: black;
 	left: 0;
-
+   
     margin-top: 1vw;
 	width: 100vw;
     
 	height: 10%;
 	position: relative;
+	overflow: hidden;
 }
 .f p {
 	text-overflow: ellipsis;
+	height: 100px;
 }
 * {
-	column-count: 1;
+	
 	box-sizing: border-box;
 	
 }
 
 #ico {
 	height:100%;
-	width: 10%;
+	width: 20%;
 }
+#ia {
+	width: 20% !important;
+	height: 10% !important;
+	float: left;
+}
+
 
