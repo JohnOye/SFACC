@@ -82,7 +82,7 @@ animation-name: me;
 	background-color: brown;
 	list-style-type: none;
 	padding: 0;
-	display: block;
+
 	width: 100%;
 	height: 10%;
 	position: fixed;
@@ -91,6 +91,10 @@ animation-name: me;
 	margin: 0;
 	right: 0;
 	top: 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	transition: width 0.3s;
 	z-index: 1;
 }
@@ -138,9 +142,7 @@ z-index: 1;
 	color: white;
 	padding: 15px;
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	
 	border-bottom: 0px solid #555;
 	background-color: brown;
 	font-size: 15px;
@@ -151,9 +153,7 @@ z-index: 1;
 	transition: background-color 0.7s;
 }
 /*a fix in daily reading needs to occur*/
-.na li  a[class="dr"] {
-	padding-top: 17%;
-}
+
 .na li a:visited {
 	color: white;
 }
