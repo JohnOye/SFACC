@@ -1,11 +1,14 @@
+@font-face {
+	font-family: dk;
+	src: url("fonts/AGENCYB.ttf");
+}
 .un {
 	position: absolute;
 	top: 320px;
 	left: 75px;
 }
 body {
-
-	
+	overflow: scroll;
 
 }
 @keyframes anim {
@@ -16,11 +19,7 @@ body {
 }
 h1 {
 	color: black;
-	text-shadow: 3px 3px 1px grey;
-	font-family: Arial Rounded MT Bold, Arial, sans-serif;
-}
-#sign {
-	display: block;
+	font-family: dk;
 }
 .sign {
 	top: 1px;
@@ -28,15 +27,16 @@ h1 {
 	height: 40px;
 	border-radius: 5px;
 	font-size: 15px;
-	border: 2px solid green;
-	background-color: green;
+	border: 2px solid #3A120F;
+	background-image: linear-gradient(to left, #3A120F, #3A120F, #8b2a1e);
 	color: white;
 	cursor: pointer;
 	position: relative;
 	right: 1%;
 	float: right;
 	margin-top: 13px;
-	display: none;
+	z-index: 1;
+
 }
 .log {
 	float: right;
@@ -48,11 +48,12 @@ h1 {
 	font-size: 15px;
 	border: 2px solid blue;
 	cursor: pointer;
-	right: 2%;
-	background-color: blue;
+	right: 1%;
+	margin-right: 2px;
+    background-image: linear-gradient(to right, blue, blue, cyan);
 	margin-top: 13px;
 	position: relative;
-	display: none;
+	z-index: 1;
 }
 
 a {
@@ -81,28 +82,46 @@ animation-name: me;
 	background-color: brown;
 	list-style-type: none;
 	padding: 0;
-	display: block;
-	width: 0%;
-	height: 100%;
+
+	width: 100%;
+	height: 10%;
 	position: fixed;
 	overflow: hidden;
 	display: block;
 	margin: 0;
 	right: 0;
-	top: 10;
-	float: right;
+	top: 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	transition: width 0.3s;
 	z-index: 1;
-    
 }
-.na #ttl {
+ #ttl {
   background-color: green;
+  color: white;
+  height: 10%;
+  width: 100%;
+ z-index: 1;
+ position: fixed;
+  margin: 0;
+  top: 0%;
+  left: 0;
+}
+.ttl h1 {
+	background-color: green;
   color: white;
   height: 10%;
   width: 100%;
  position: fixed;
   margin: 0;
-  top: 1;
+  top: 0;
+  display: block;
+  margin-left: 12%;
+  padding-top: 2%;
+  font-family: dk;
+z-index: 1;
 }
 
 .na #fn {
@@ -116,29 +135,36 @@ animation-name: me;
 .na li {
 	float: left;
 	color: white;
+	height: 100%;
 }
 .na li a {
 	text-decoration: none;
 	color: white;
 	padding: 15px;
-	width: 100vw;
-	display: block;
-	border-left: 0px solid #555;
+	width: 100%;
+	
+	border-bottom: 0px solid #555;
 	background-color: brown;
 	font-size: 15px;
-	height: 42%;
+	height: 100%;
+	padding-top: 17%;
+	
 	float: left;
+	transition: background-color 0.7s;
 }
+/*a fix in daily reading needs to occur*/
+
 .na li a:visited {
 	color: white;
 }
 .na li a:hover {
 	background-color: green;
 	color: white;
-	border-left: 5px solid #000;
+	border-bottom: 5px solid #000;
 }
+
 .na li i {
-	font-size: 35px;
+	font-size: 30px;
 }
 
 #rb {
@@ -146,16 +172,20 @@ animation-name: me;
 	background-color: green;
 	border-radius: 100%;
 	float: right;
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
 	position: fixed;
-	margin-bottom: 2px;
+	right: 1%;
+	bottom: 1%;
+	box-shadow: 5px 5px 6px grey;
+	margin-bottom: 0;
 }
 .nav {
 	position: fixed;
 	background-color: #3A120F;
 	width: 100%;
-	display: block;
+	display: none;
 	left: 0;
 	top: 0;
 	height: 10%;
@@ -165,8 +195,9 @@ animation-name: me;
 	
 	color: black;
 	left: 0;
-   
+
     margin-top: 1vw;
+	padding-bottom: 3%;
 	width: 100vw;
     
 	height: 10%;
@@ -175,22 +206,59 @@ animation-name: me;
 }
 .f p {
 	text-overflow: ellipsis;
+	font-family: dk;
+    padding-left: 2%;
+    left: 2%;
 	height: 100px;
 }
 * {
 	
 	box-sizing: border-box;
-	
 }
 
 #ico {
 	height:100%;
-	width: 20%;
+	width: 10%;
 }
 #ia {
-	width: 20% !important;
-	height: 10% !important;
+	width: 20%;
+	height: 20%;
+	border-radius: 100%;
 	float: left;
+	margin-right: 3%;
+}
+i[class="fa fa-bars"] {
+	display: none;
+}
+.sm {
+	border-radius: 100px;
+	border: 2px solid black;
+	position: absolute;
+	margin-bottom: 0;
+	bottom: 0;
+	padding: 10px;
+	left: 50%;
+    height: 40px;
+	z-index: 1;
+	font-weight: 10px;
+	cursor: pointer;
+	float: center;
+	width: 100px;
+	font-family: dk;
+	transition: background-color 0.7s, color 0.7s;
+}
+.sm:hover {
+	background-color: grey;
+	color: white;
+}
+div h2 {
+	font-family: dk;
 }
 
-
+.divide {
+	width: 50%;
+	margin-top: 3%;
+}
+.atitle {
+	text-decoration: underline;
+}

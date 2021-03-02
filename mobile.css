@@ -1,6 +1,6 @@
 @font-face {
 	font-family: dk;
-	src: url("fonts/AGENCYB.TTF");
+	src: url("fonts/AGENCYB.ttf");
 }
 .un {
 	position: absolute;
@@ -55,6 +55,7 @@ h1 {
 	position: relative;
 	z-index: 1;
 }
+
 
 a {
 	text-decoration: none;
@@ -221,8 +222,9 @@ z-index: 1;
 	width: 10%;
 }
 #ia {
-	width: 20% !important;
-	height: 10% !important;
+	width: 20%;
+	height: 20%;
+	border-radius: 100%;
 	float: left;
 	margin-right: 3%;
 }
@@ -260,4 +262,5 @@ div h2 {
 }
 .atitle {
 	text-decoration: underline;
+	color: brown;
 }
