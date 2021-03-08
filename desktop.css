@@ -36,7 +36,7 @@ h1 {
 	float: right;
 	margin-top: 13px;
 	z-index: 1;
-
+display: none;
 }
 .log {
 	float: right;
@@ -54,7 +54,9 @@ h1 {
 	margin-top: 13px;
 	position: relative;
 	z-index: 1;
+	display:none;
 }
+
 
 a {
 	text-decoration: none;
@@ -78,25 +80,20 @@ animation-name: me;
 30% {border-color: pink;}
 40% {border-color: white;}
 }
-.na {
-	background-color: brown;
-	list-style-type: none;
-	padding: 0;
 
+.bar {
+	background-color: brown;
 	width: 100%;
 	height: 10%;
-	position: fixed;
-	overflow: hidden;
-	display: block;
+	top: 10%;
+	z-index:1;
 	margin: 0;
 	right: 0;
-	top: 10%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	transition: width 0.3s;
-	z-index: 1;
+	
+	position: fixed;
+}
+.bar i {
+	float:right;
 }
  #ttl {
   background-color: green;
@@ -113,9 +110,10 @@ animation-name: me;
 	background-color: green;
   color: white;
   height: 10%;
-  width: 100%;
+  width: 95%;
  position: fixed;
   margin: 0;
+  font-size: 20px;
   top: 0;
   display: block;
   margin-left: 12%;
@@ -123,7 +121,26 @@ animation-name: me;
   font-family: dk;
 z-index: 1;
 }
+.na {
+	background-color: brown;
+	list-style-type: none;
+	padding: 0;
 
+	width: 0%;
+	height: 100%;
+	position: fixed;
+	overflow: scroll;
+	display: block;
+	margin: 0;
+	right: 0;
+	top: 20%;
+	display: block;
+	
+	
+	transition: width 0.3s;
+	z-index: 2;
+	
+}
 .na #fn {
 	margin: 0;
 }
@@ -135,7 +152,8 @@ z-index: 1;
 .na li {
 	float: left;
 	color: white;
-	height: 100%;
+	width: 100%;
+	z-index: 1;
 }
 .na li a {
 	text-decoration: none;
@@ -146,7 +164,7 @@ z-index: 1;
 	border-bottom: 0px solid #555;
 	background-color: brown;
 	font-size: 15px;
-	height: 100%;
+	height: 20%;
 	padding-top: 17%;
 	
 	float: left;
@@ -261,4 +279,5 @@ div h2 {
 }
 .atitle {
 	text-decoration: underline;
+	color: brown;
 }

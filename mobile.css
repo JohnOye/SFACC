@@ -2,6 +2,10 @@
 	font-family: dk;
 	src: url("fonts/AGENCYB.ttf");
 }
+*::selection {
+	background-color: brown;
+	color: white;
+}
 .un {
 	position: absolute;
 	top: 320px;
@@ -221,6 +225,7 @@ z-index: 1;
 	height:100%;
 	width: 10%;
 }
+
 #ia {
 	width: 20%;
 	height: 20%;
