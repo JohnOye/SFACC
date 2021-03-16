@@ -1,6 +1,6 @@
 @font-face {
 	font-family: dk;
-	src: url("fonts/AGENCYB.TTF");
+	src: url("fonts/AGENCYB.ttf");
 }
 *::selection {
 	background-color: brown;
@@ -185,6 +185,7 @@ z-index: 1;
 	bottom: 1%;
 	box-shadow: 5px 5px 6px grey;
 	margin-bottom: 0;
+	z-index: 10;
 }
 .nav {
 	position: fixed;
@@ -268,4 +269,19 @@ div h2 {
 .atitle {
 	text-decoration: underline;
 	color: brown;
+}
+
+.__foot {
+	position: relative;
+	display: block;
+	background-color: black;
+	margin: 0;
+	bottom: 0;
+	top: 100%;
+	height: 30%;
+	left: 0;
+	box-sizing: border-box;
+	
+	width: 100%;
+	right: 0;
 }
