@@ -7,3 +7,4 @@
 <i class="far fa-images"></i>
 <i class="far fa-clipboard"></i>
 <i class="fas fa-book-reader"></i>
+<i class="far fa-comment"></i>
