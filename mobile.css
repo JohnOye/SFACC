@@ -285,3 +285,8 @@ div h2 {
 	width: 100%;
 	right: 0;
 }
+#rb i {
+font-size: 30px;
+	color: white;
+		left: 25%;
+}
